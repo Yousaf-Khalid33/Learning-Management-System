@@ -1,42 +1,31 @@
-# 🎓 EduFlow: LMS & Dynamic Quiz Taker
+# 🎓 EduPro: Laravel LMS & Auto-Graded Quiz System
 
-A streamlined **Learning Management System (LMS)** and **Quiz Assessment** platform designed to make digital education intuitive for both instructors and students.
+A robust, server-side rendered **Learning Management System** built with Laravel. This platform automates the entire learning lifecycle—from course enrollment to automated assessment and final certification.
 
 ---
 
-## 🌟 Features
+## 🌟 Key Features
 
-### 📖 For Instructors (LMS)
-* **Course Creation:** Easily upload and organize lessons, modules, and resources.
-* **Student Management:** Track enrollment and monitor student progress through the curriculum.
-* **Content Dashboard:** A centralized hub to manage all educational assets.
+### 🧠 Intelligent Quiz Engine
+* **Auto-Checker:** Instant evaluation of student submissions using backend logic to compare answers against the database.
+* **Smart Scoring:** Automated calculation of percentages and pass/fail statuses.
+* **Attempt Limits:** Configurable settings to control how many times a student can retake a quiz.
 
-### 📝 For Students (Quiz Taker)
-* **Interactive UI:** A clean, distraction-free interface for taking assessments.
-* **Instant Grading:** Get immediate feedback and score breakdowns upon submission.
-* **Timer Support:** (Optional) Keep track of time spent on each assessment.
-* **Result History:** Review past performance and areas for improvement.
+### 📜 Certification System
+* **Automatic Completion Certificates:** Upon passing all required quizzes, the system dynamically generates a completion certificate.
+* **Unique Validation:** Each certificate is tied to the user's record and completion date.
+
+### 📁 Course Management (LMS)
+* **Blade-Powered UI:** A fast, responsive frontend using Laravel Blade templates.
+* **Progress Tracking:** Visual indicators showing how much of the course a student has completed.
+* **Admin Dashboard:** Full CRUD functionality for courses, lessons, and quiz questions.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-| :--- | :--- |
-| **Frontend** | [e.g., React.js, Tailwind CSS] |
-| **Backend** | [e.g., Node.js, Express] |
-| **Database** | [e.g., MongoDB, PostgreSQL] |
-| **Auth** | [e.g., JWT, Firebase Auth] |
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-* [e.g., Node.js v18+]
-* [e.g., npm or yarn]
-
-### Installation
-1. **Clone the repo:**
-   ```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+* **Framework:** [Laravel 11.x](https://laravel.com)
+* **Frontend:** Blade Templating Engine & [CSS/Bootstrap]
+* **Database:** MySQL 
+* **PDF Generation:** [Dom Pdf] (used for Certificates)
+* **Authentication:** Jason Web Token JWT
